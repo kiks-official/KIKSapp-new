@@ -231,6 +231,8 @@ elif st.session_state.step == 'tennkaisetu':
 
 elif st.session_state.step == 'utyuukaisetu':
     st.info(f"### 宇宙・気象系列\n{DESCRIPTIONS['宇宙気象系列']}")
+    st.write('**特徴的なカリキュラム**')
+    st.write('宇宙と気象')
     if st.button("一覧に戻る"): go_back(); st.rerun()
 
 elif st.session_state.step == 'DXkaisetu':

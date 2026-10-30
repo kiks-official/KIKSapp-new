@@ -115,18 +115,12 @@ with st.sidebar:
 st.title("🎓 系列になやむ人のための系列選択ナビ")
 
 # プログレスバー
-steps_map = {'IE': 5, 'IIE': 5, 'NOT': 5, 'branch': 10, 'decided_select': 50, 'quiz': 50, 'suki': 99, 'tiga': 0, 'tya': 0, 'goal': 100}
+steps_map = {'IE': 10, 'IIE': 5, 'NOT': 5, 'Q1': 18, 'Q2': 26,'Q3': 34, 'Q4': 42, 'Q5': 50, 'Q6': 58, 'Q7': 66, 'Q8': 74, 'Q9': 82, 'Q10': 90, 'suki': 99, 'tiga': 0, 'tya': 0, 'goal': 100}
 if st.session_state.step in steps_map:
-    if st.session_state.step == 'quiz':
-        # クイズ中は質問進行度に応じて動的計算
-        total_q = len(DIAGNOSIS_QUESTIONS)
-        curr_q = st.session_state.get('q_idx', 0) + 1
-        progress = int(10 + (curr_q / total_q) * 80)
-    else:
-        progress = steps_map[st.session_state.step]
+    progress = steps_map[st.session_state.step]
     st.progress(progress / 100)
     st.caption(f"診断の進み具合: {progress}%")
-
+    
 if 'scores' not in st.session_state:
     st.session_state.scores = {
         "宇宙・気象系列": 0,

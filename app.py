@@ -251,7 +251,7 @@ elif st.session_state.step == 'utyuukaisetu':
     st.write('古典と気象')
     st.image("utyuu.zyugyou.png", caption="宇宙気象系列授業内容", use_container_width=True)
     st.write('数学と理科を中心としたカリキュラム✨')
-    st.write('国公立・私立大学の理学部・工学部に行くことができる系列')
+    st.write('国公立・私立大学の理学部・工学部にめざすことができる系列')
     st.write('私立大学では関西学院大学の理学部など')
     st.write('国公立では兵庫県立大学の理学部など')
     if st.button("一覧に戻る"): go_back(); st.rerun()

@@ -250,14 +250,25 @@ elif st.session_state.step == 'utyuukaisetu':
     st.write('宇宙と開発')
     st.write('古典と気象')
     st.image("utyuu.zyugyou.png", caption="宇宙気象系列授業内容", use_container_width=True)
-    st.write('数学と理科を中心としたカリキュラム✨')
+    st.write('数学・理科を中心としたカリキュラム✨')
     st.write('国公立・私立大学の理学部・工学部にめざすことができる系列')
-    st.write('私立大学では関西学院大学の理学部など')
-    st.write('国公立では兵庫県立大学の理学部など')
+    st.write('私立大学
+              関西学院大学の理学部など')
+    st.write('国公立
+              兵庫県立大学の理学部など')
     if st.button("一覧に戻る"): go_back(); st.rerun()
 
 elif st.session_state.step == 'DXkaisetu':
     st.info(f"### DX系列\n{DESCRIPTIONS['DX系列']}")
+    st.write('**📚特徴的なカリキュラム**')
+    st.write('情報Ⅱ')
+    st.write('情報システムのプログラミング')
+    st.write('ネットワークシステム')
+    st.image("DX.zyugyou.png", caption="宇宙気象系列授業内容", use_container_width=True)
+    st.write('数学・理科・情報を中心としたカリキュラム✨')
+    st.write('国公立・私立大学の情報系学部にめざすことができる系列')
+    st.write('私立大学では大阪電気通信大学、大和大学の情報学部など')
+    st.write('専門学校では') 
     if st.button("一覧に戻る"): go_back(); st.rerun()
 
 elif st.session_state.step == 'tikaisetu':

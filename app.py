@@ -195,7 +195,7 @@ DECIDED_OPTIONS = [
 ]
 
 FOUR_CHOICES = [
-    {"text": "とても当てはまる", "score": 2},
+    {"text": "とても当てはまる", "score": 4},
     {"text": "やや当てはまる", "score": 1},
     {"text": "あまり当てはまらない", "score": -1},
     {"text": "全く当てはまらない", "score": -2}

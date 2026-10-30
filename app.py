@@ -249,7 +249,7 @@ elif st.session_state.step == 'utyuukaisetu':
     st.write('宇宙と気象')
     st.write('宇宙と開発')
     st.write('古典と気象')
-    st.image("utyuu.zyugyou.png", caption="宇宙気象系列", use_container_width=True)
+    st.image("utyuu.zyugyou.png", caption="宇宙気象系列授業内容", use_container_width=True)
     if st.button("一覧に戻る"): go_back(); st.rerun()
 
 elif st.session_state.step == 'DXkaisetu':

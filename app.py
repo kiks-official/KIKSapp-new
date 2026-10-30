@@ -128,10 +128,6 @@ if st.session_state.step in steps_map:
     st.caption(f"診断の進み具合: {progress}%")
 
 if 'scores' not in st.session_state:
-    st.session_state.scores = 
-        "宇宙・気象系列": 0,
-
-if 'scores' not in st.session_state:
     st.session_state.scores = {
         "宇宙・気象系列": 0,
         "DX系列": 0,

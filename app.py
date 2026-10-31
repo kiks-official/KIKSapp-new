@@ -246,7 +246,7 @@ elif st.session_state.step == 'tennkaisetu':
 elif st.session_state.step == 'utyuukaisetu':
     st.info(f"### 宇宙・気象系列\n{DESCRIPTIONS['宇宙気象系列']}")
     st.write('**📚特徴的なカリキュラム**')
-    st.write('_宇宙と気象')
+    st.write('  宇宙と気象')
     st.write('_宇宙と開発')
     st.write('_古典と気象')
     st.image("utyuu.zyugyou.png", caption="宇宙・気象系列授業内容", use_container_width=True)

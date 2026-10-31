@@ -301,6 +301,18 @@ elif st.session_state.step == 'hyogokaisetu':
 
 elif st.session_state.step == 'autodoakaisetu':
     st.success(f"### スポーツ・アウトドアと防災系列\n{DESCRIPTIONS['スポーツアウトドアと防災系列']}")
+    st.write('**📚特徴的なカリキュラム**')
+    st.write('アウトドア防災')
+    st.write('スポーツⅠ')
+    st.write('生涯スポーツ')
+    st.image("supobou.zyugyou.png", caption="スポーツ・アウトドアと防災系列授業内容", use_container_width=True)
+    st.write('社会・英語・体育を中心としたカリキュラム✨')
+    st.write('教育系の国公立・私立大学・公務員(消防士・警察官)をめざすことができる系列')
+    st.write('私立大学')
+    st.write('法学部・教育学部')
+    st.write('甲南大学、武庫川大学など')
+    st.write('専門学校')
+    st.write('大阪ブライダル専門学校')
     if st.button("一覧に戻る"): go_back(); st.rerun()
 
 elif st.session_state.step == 'zinnkaisetu':

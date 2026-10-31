@@ -221,6 +221,11 @@ if st.session_state.step == 'start':
         if st.button("系列（天・地・人）の説明を見る", use_container_width=True):
             move_to('NO')
             st.rerun()
+    # ➕ 追加：KIKSの系列の活動を見るボタン
+    st.markdown("<div style='margin-top: 10px;'></div>", unsafe_allow_html=True)
+    if st.button("📸 KIKSの系列の活動を見る", use_container_width=True):
+        move_to('kiks_activities')
+        st.rerun()
 
 # 2. 系列解説トップ
 elif st.session_state.step == 'NO':

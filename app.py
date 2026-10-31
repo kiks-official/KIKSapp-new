@@ -353,11 +353,11 @@ elif st.session_state.step == 'daibakaisetu':
 elif st.session_state.step == 'riberikaisetu':
     st.warning(f"### リベラルアーツ系列\n{DESCRIPTIONS['リベラルアーツ文系系列']}")
     st.write('**📚特徴的なカリキュラム**')
-    st.write('&emsp;リベラルアーツ理系系列')
+    st.write('・リベラルアーツ理系系列')
     st.write('&emsp;物理・化学・生物・地理')
     st.write('&emsp;数学B・C')
     st.write('&emsp;古典探究')
-    st.write('&emsp;リベラルアーツ文系系列')
+    st.write('・リベラルアーツ文系系列')
     st.write('&emsp;古典探究')
     st.write('&emsp;日本史・世界史')
     st.write('&emsp;数学B')

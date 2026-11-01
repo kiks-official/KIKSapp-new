@@ -439,7 +439,7 @@ elif st.session_state.step == 'decided_select':
     for opt in DECIDED_OPTIONS:
         if st.button(opt["text"], use_container_width=True):
             st.session_state.scores[opt["track"]] = 12
-            move_to('suki')
+            move_to('goal')
             st.rerun()
 
 elif st.session_state.step == 'quiz':
